@@ -1,23 +1,14 @@
 ## Docker Python Analytics (base image)
 
-This is a base image for Python with specific analytics libraries, like:
-- SciPy
-- SkLearn
-- NumPy
-- Panda
-- Statsmodels
-- Flask
-- PrometheusClient
-- Py4J
-- FindSpark
-- etc...
+Dit image is gebasseerd op Alpine, Python3 en er is mini-Conda op geinstalleerd. Op
+deze manier kunnen eenvoudig packages geinstalleerd worden, zoals Numpy en Tensorflow.
 
 ## Build the image
 ```console
-$ docker build -t alliander/python-analytics:0.1 .
+$ docker build -t alliander/python-analytics:0.2 .
 ```
 
 ## Push the image
 ```console
-$ docker push alliander/python-analytics:0.1
+$ docker push alliander/python-analytics:0.2
 ```
